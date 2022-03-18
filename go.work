@@ -1,0 +1,8 @@
+go 1.18
+
+use (
+    .
+    ./cmd/my_app
+)
+
+replace github.com/samber/lo v1.3.1 => github.com/samber/lo v1.3.2-0.20220305174447-4edabde35217
