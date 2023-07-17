@@ -4,10 +4,12 @@ import (
 	"github.com/rs/zerolog/log"
 	"github.com/samber/lo"
 	lop "github.com/samber/lo/parallel"
+	"golang.org/x/text/cases"
 	"strconv"
 )
 
 func main() {
+	cases.Lower()
 	names := lo.Uniq[string]([]string{"Samuel", "Marc", "Samuel"})
 	log.Debug().Msgf("Uniq %v+", names)
 
